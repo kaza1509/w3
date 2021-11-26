@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: Roboto, serif; */
+    font-family: 'Roboto','Source Sans Pro', sans-serif;
+    height: 2000px ;
+}
+
+*::selection {
+    background-color: #04AA6D;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.green {
+    background-color: #04AA6D;
+    color: #fff!important;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    display: flex;
+    height: 44px;
+    background-color: #282A35;
+    line-height: 44px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#core {
+    padding-top: 44px;
+}
+
+.header i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.header a {
+    display: inline-block;
+    color: #fff;
+    /* font-weight: 525; */
+    padding: 0 15px;
+    font-size: 15px;
+    letter-spacing: 1;
+}
+
+.header .avatar i, .header .logo i {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.header a:hover {
+    background-color: #000;
+}
+
+.header .menu li {
+    display: inline-block;
+    float: left;
+}
+
+.header .menu {
+    text-align: center;
+}
+
+#core .sidebar {
+    width: 220px;
+    background-color: #E7E9EB;
+    height: 100vh;
+    overflow: scroll;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    position: fixed;
+}
+
+#core .sidebar  h2 {
+    font-size: 21px;
+    line-height: 1.5;
+    padding-left: 15px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+#core .sidebar a {
+    display: block;
+    color: #000;
+    line-height: 1.5;
+    padding-left: 15px;
+    font-size: 15px;
+    
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+
+#core .sidebar a:hover {
+    background-color: #cccccc;
+}
+
+#core .content {
+    padding-left: 220px;
+}
+
+#core .try {
+    display: inline-block;
+    background-color: #04AA6D;
+    color: #fff;
+    font-weight:  500;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    .header ul li:nth-child(n+9){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header ul li:nth-child(n+6){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header ul li:nth-child(n+4){
+        display: none;
+    }
+}
+
+#arrow i {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 33px;
+    color: #04AA6D;
+}
