@@ -144,6 +144,18 @@ a {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .header ul li:nth-child(n+3){
+        display: none;
+    }
+    #core .sidebar {
+        display: none;
+    }
+    #core .content {
+        padding-left: 0px;
+    }
+}
+
 #arrow i {
     position: fixed;
     right: 20px;
